@@ -1,0 +1,71 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    height: 100vh;
+    position: relative;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* kumbh-sans-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/kumbh-sans-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* kumbh-sans-700 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/kumbh-sans-v20-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/****************************************************/
+/* DESKTOP STYLING */
+/****************************************************/
+@media (min-width: 25rem) {
+
+}
+
+/****************************************************/
+/* MOBILE STYLING */
+/****************************************************/
+@media (min-width: 12rem) and (max-width: 25rem) {
+
+}
