@@ -34,6 +34,11 @@ main {
     display: flex;
 }
 
+hr {
+    border: none;
+    border-top: 1px solid hsl(240, 6%, 50%);
+}
+
 .card {
     margin: auto;
     background-color: white;
@@ -67,9 +72,14 @@ main {
     flex-grow: 1;
 }
 
+.label:hover {
+    color: hsl(14, 88%, 65%);
+}
+
 .accordion .content {
     height: 0;
     overflow: hidden;
+    transition: 0.5s;
 }
 
 .accordion .container.active .content {
@@ -111,6 +121,8 @@ main {
 @media (min-width: 25rem) {
     .card {
         width: 70vw;
+        height: 55vh;
+        padding: 4rem;
     }
 
     .img-mobile {
