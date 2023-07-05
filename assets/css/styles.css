@@ -11,7 +11,10 @@ body {
     -webkit-font-smoothing: antialiased;
     height: 100vh;
     position: relative;
+    display: flex;
+    justify-content: center;
     font-family: 'Kumbh Sans', sans-serif;
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
 }
 
 img, picture, video, canvas, svg {
@@ -25,6 +28,52 @@ input, button, textarea, select {
 
 p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
+}
+
+main {
+    display: flex;
+}
+
+.card {
+    margin: auto;
+    background-color: white;
+    align-self: center;
+    border-radius: 2rem;
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.faq-head {
+    font-size: 2.2rem;
+    margin: 0.5rem;
+}
+
+.container {
+    padding: 1rem;
+}
+
+.item {
+    display: flex;
+}
+
+.down-arrow {
+    width: 1rem;
+    height: 0.5rem;
+    align-self: center;
+}
+
+.label {
+    flex-grow: 1;
+}
+
+.accordion .content {
+    height: 0;
+    overflow: hidden;
+}
+
+.accordion .container.active .content {
+    height: 3rem;
 }
 
 .attribution { 
@@ -60,12 +109,29 @@ p, h1, h2, h3, h4, h5, h6 {
 /* DESKTOP STYLING */
 /****************************************************/
 @media (min-width: 25rem) {
+    .card {
+        width: 70vw;
+    }
 
+    .img-mobile {
+        display: none;
+    }
 }
 
 /****************************************************/
 /* MOBILE STYLING */
 /****************************************************/
 @media (min-width: 12rem) and (max-width: 25rem) {
+    .card {
+        width: 90vw;
+        flex-direction: column;
+    }
 
+    .img-desktop {
+        display: none;
+    }
+
+    .img-mobile {
+        display: block;
+    }
 }
