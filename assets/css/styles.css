@@ -128,10 +128,20 @@ hr {
         padding: 4rem;
         overflow: hidden;
     }
+    .faq-content {
+        width: 100%;
+    }
+
+    /* .img-desktop {
+        width: 50rem;
+        height: 25rem;
+    } */
 
     .img-desktop {
         position: relative;
-        right: 14%;
+        width: 150%;
+        height: 100%;
+        right: 26%;
         z-index: 1;
     }
 
@@ -149,9 +159,12 @@ hr {
     }
 
     .bg-pattern-desktop {
+        display: block;
+        width: 100rem;
+        height: 40rem;
         position: relative;
-        right: 60%;
-        top: 30%;
+        bottom: 30rem;
+        left: -10rem;
         z-index: 0;
     }
 
