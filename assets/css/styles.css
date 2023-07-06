@@ -45,7 +45,6 @@ hr {
     align-self: center;
     border-radius: 2rem;
     display: flex;
-    gap: 2rem;
     padding: 2rem;
 }
 
@@ -86,6 +85,10 @@ hr {
     height: 3rem;
 }
 
+.rotate {
+    transform: rotate(180deg);
+}
+
 .attribution { 
     font-size: 11px; 
     text-align: center;
@@ -121,11 +124,38 @@ hr {
 @media (min-width: 25rem) {
     .card {
         width: 70vw;
-        height: 55vh;
+        height: 60vh;
         padding: 4rem;
+        overflow: hidden;
+    }
+
+    .img-desktop {
+        position: relative;
+        right: 14%;
+        z-index: 1;
+    }
+
+    .box-desktop {
+        position: relative;
+        z-index: 3;
+        width: 13rem;
+        height: 13rem;
+        right: 92.5%;
+        top: 45%;
     }
 
     .img-mobile {
+        display: none;
+    }
+
+    .bg-pattern-desktop {
+        position: relative;
+        right: 60%;
+        top: 30%;
+        z-index: 0;
+    }
+
+    .bg-pattern-mobile {
         display: none;
     }
 }
@@ -145,5 +175,9 @@ hr {
 
     .img-mobile {
         display: block;
+    }
+
+    .bg-pattern-desktop {
+        display: none;
     }
 }

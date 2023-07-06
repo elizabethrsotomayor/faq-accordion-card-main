@@ -10,6 +10,9 @@ for (let i=0; i<accordion.length; i++) {
     this.classList.toggle('active');
 
     let curLabel = document.getElementById(`label-${i}`);
+    let curArrow = document.getElementById(`down-arrow${i}`);
+
+    curArrow.classList.toggle('rotate');
 
     if(curLabel.style.fontWeight !== "700") {
         curLabel.style.fontWeight = "700";
