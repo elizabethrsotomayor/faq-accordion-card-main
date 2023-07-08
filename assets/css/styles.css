@@ -10,9 +10,6 @@ body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     height: 100vh;
-    position: relative;
-    display: flex;
-    justify-content: center;
     font-family: 'Kumbh Sans', sans-serif;
     background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
 }
@@ -28,10 +25,6 @@ input, button, textarea, select {
 
 p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
-}
-
-main {
-    display: flex;
 }
 
 hr {
@@ -61,14 +54,14 @@ hr {
     display: flex;
 }
 
+.label {
+    flex-grow: 1;
+}
+
 .down-arrow {
     width: 1rem;
     height: 0.5rem;
     align-self: center;
-}
-
-.label {
-    flex-grow: 1;
 }
 
 .label:hover {
@@ -124,18 +117,11 @@ hr {
 @media (min-width: 25rem) {
     .card {
         width: 70vw;
+        transform: translateY(30%);
         height: 60vh;
         padding: 4rem;
         overflow: hidden;
     }
-    .faq-content {
-        width: 100%;
-    }
-
-    /* .img-desktop {
-        width: 50rem;
-        height: 25rem;
-    } */
 
     .img-desktop {
         position: relative;
@@ -147,11 +133,6 @@ hr {
 
     .box-desktop {
         position: relative;
-        z-index: 3;
-        width: 13rem;
-        height: 13rem;
-        right: 92.5%;
-        top: 45%;
     }
 
     .img-mobile {
