@@ -1,7 +1,5 @@
 'use strict';
 
-console.log("it works");
-
 const accordion = document.getElementsByClassName('container');
 
 for (let i=0; i<accordion.length; i++) {
