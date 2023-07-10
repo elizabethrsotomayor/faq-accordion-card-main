@@ -118,7 +118,7 @@ hr {
     .card {
         width: 70vw;
         transform: translateY(30%);
-        height: 60vh;
+        height: 65vh;
         padding: 4rem;
         overflow: hidden;
     }
